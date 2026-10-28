@@ -1,0 +1,322 @@
+{
+  "generator": "tests/fixtures/generate_samples.py",
+  "seed": 42,
+  "reports": 3,
+  "oru_messages": 27,
+  "orm_messages": 2,
+  "shape_counts": {
+    "normal": 6,
+    "correction": 3,
+    "region_alias": 3,
+    "duplicate_delivery": 3,
+    "missing_block_no": 3,
+    "inverted_time": 3,
+    "gbk_encoding": 3,
+    "mixed_encoding": 1,
+    "empty_value": 1,
+    "overlong_value": 1,
+    "order_side": 2
+  },
+  "data_boundary": "标识一律类目化占位，不含姓名 / 身份证 / 住院号 / 批号等患者可识别明细",
+  "files": [
+    {
+      "name": "acc-gen-0001-01-ki67.hl7",
+      "kind": "ORU^R01",
+      "bytes": 251,
+      "sha256": "4527bc27872d99d171a5105cacaad6408ab0b0bb133775b7c0c9ee991a59fea2",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-KI67"
+    },
+    {
+      "name": "acc-gen-0001-02-correction.hl7",
+      "kind": "ORU^R01",
+      "bytes": 260,
+      "sha256": "cb4f987d0c13496949a6095e51d712143c8082b42404fe6bb262c9f28f1da883",
+      "encoding": "utf-8",
+      "shape": "correction",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-KI67"
+    },
+    {
+      "name": "acc-gen-0001-03-alias.hl7",
+      "kind": "ORU^R01",
+      "bytes": 244,
+      "sha256": "80ffd2efc9265937631ca22a25180b4e16c02b5eff718c00d8c27df908986388",
+      "encoding": "utf-8",
+      "shape": "region_alias",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-P53"
+    },
+    {
+      "name": "acc-gen-0001-04-duplicate.hl7",
+      "kind": "ORU^R01",
+      "bytes": 251,
+      "sha256": "4527bc27872d99d171a5105cacaad6408ab0b0bb133775b7c0c9ee991a59fea2",
+      "encoding": "utf-8",
+      "shape": "duplicate_delivery",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-KI67"
+    },
+    {
+      "name": "acc-gen-0001-05-noblock.hl7",
+      "kind": "ORU^R01",
+      "bytes": 243,
+      "sha256": "5b245880bc86c17a207fbdb9b80d39e2879c6ef0724798fbfa2ce90afa3d5f33",
+      "encoding": "utf-8",
+      "shape": "missing_block_no",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-CD3"
+    },
+    {
+      "name": "acc-gen-0001-06-pr.hl7",
+      "kind": "ORU^R01",
+      "bytes": 235,
+      "sha256": "45ca25a52bdc10d860ec7d6a697412b2edbaacf39c008eb630284ff0cf6366e8",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-PR"
+    },
+    {
+      "name": "acc-gen-0001-07-inverted.hl7",
+      "kind": "ORU^R01",
+      "bytes": 251,
+      "sha256": "6f0690e2540c490eb1d8d97f1c933d984f4dd0bc28ad0e35eb0c39922a2749f2",
+      "encoding": "utf-8",
+      "shape": "inverted_time",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-PR"
+    },
+    {
+      "name": "acc-gen-0001-08-cox2.hl7",
+      "kind": "ORU^R01",
+      "bytes": 243,
+      "sha256": "bd776982d2b2972c4e4a6a69efc5f60bedef07a2611e3a2519c533b6abc0bf23",
+      "encoding": "gbk",
+      "shape": "gbk_encoding",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-COX2"
+    },
+    {
+      "name": "acc-gen-0001-09-ck7.hl7",
+      "kind": "ORU^R01",
+      "bytes": 245,
+      "sha256": "e0e06f6e0056194b979fdc13dc53c80310211e64ec05741fa6d846e62daae176",
+      "encoding": "mixed",
+      "shape": "mixed_encoding",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-CK7"
+    },
+    {
+      "name": "acc-gen-0001-10-emptyvalue.hl7",
+      "kind": "ORU^R01",
+      "bytes": 244,
+      "sha256": "5759c327483248112db31c4391f49749d0bcebc271e32ccdf5ced25db4f22160",
+      "encoding": "utf-8",
+      "shape": "empty_value",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-ER"
+    },
+    {
+      "name": "acc-gen-0001-11-overlong.hl7",
+      "kind": "ORU^R01",
+      "bytes": 852,
+      "sha256": "7d3287a87646f1b7a4572477166e740cda94b3b8878bbde942f4885a74900de4",
+      "encoding": "utf-8",
+      "shape": "overlong_value",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-P53"
+    },
+    {
+      "name": "acc-gen-0002-01-cox2.hl7",
+      "kind": "ORU^R01",
+      "bytes": 258,
+      "sha256": "47b528ae469da8a1202f900d8f5ffff6545117d6a97923f78287c8763c8d77e1",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-COX2"
+    },
+    {
+      "name": "acc-gen-0002-02-correction.hl7",
+      "kind": "ORU^R01",
+      "bytes": 264,
+      "sha256": "5eef0202457d84bfee27b948d74ef10f46693d80c1faf4c5140cc9ed65bc58e1",
+      "encoding": "utf-8",
+      "shape": "correction",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-COX2"
+    },
+    {
+      "name": "acc-gen-0002-03-alias.hl7",
+      "kind": "ORU^R01",
+      "bytes": 253,
+      "sha256": "427e415815915dbed06581dbf14829afdc4e655041867a76503f42f4566dfb8b",
+      "encoding": "utf-8",
+      "shape": "region_alias",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-P53"
+    },
+    {
+      "name": "acc-gen-0002-04-duplicate.hl7",
+      "kind": "ORU^R01",
+      "bytes": 258,
+      "sha256": "47b528ae469da8a1202f900d8f5ffff6545117d6a97923f78287c8763c8d77e1",
+      "encoding": "utf-8",
+      "shape": "duplicate_delivery",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-COX2"
+    },
+    {
+      "name": "acc-gen-0002-05-noblock.hl7",
+      "kind": "ORU^R01",
+      "bytes": 255,
+      "sha256": "e6def71b9d87e93588ceae46e41c87d3eb161335017719c6454bbdc89235882f",
+      "encoding": "utf-8",
+      "shape": "missing_block_no",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-KI67"
+    },
+    {
+      "name": "acc-gen-0002-06-er.hl7",
+      "kind": "ORU^R01",
+      "bytes": 242,
+      "sha256": "fcb5548cca8b0fbac5e5e7a540b6385cf764aec9537544b17ce3cd208272aafe",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-ER"
+    },
+    {
+      "name": "acc-gen-0002-07-inverted.hl7",
+      "kind": "ORU^R01",
+      "bytes": 254,
+      "sha256": "4726fffac9c7eae505b34d48aa38d8900d0045e347eb35c6a107e0d4030210fd",
+      "encoding": "utf-8",
+      "shape": "inverted_time",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-ER"
+    },
+    {
+      "name": "acc-gen-0002-08-cox2.hl7",
+      "kind": "ORU^R01",
+      "bytes": 251,
+      "sha256": "c2328bad2594d479c6eed00e308c8f58bf4b4daebddabb11e9e96939b7aa643f",
+      "encoding": "gbk",
+      "shape": "gbk_encoding",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-COX2"
+    },
+    {
+      "name": "acc-gen-0003-01-cd3.hl7",
+      "kind": "ORU^R01",
+      "bytes": 237,
+      "sha256": "f7ca8e894860b884ca363c36fbde0dfca2577309175f0abf66eca07b825e94ae",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-CD3"
+    },
+    {
+      "name": "acc-gen-0003-02-correction.hl7",
+      "kind": "ORU^R01",
+      "bytes": 254,
+      "sha256": "b0a99f5037e1c57947b2f5868ea84849b6bb53dc44ac186f24052db30ada8219",
+      "encoding": "utf-8",
+      "shape": "correction",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-CD3"
+    },
+    {
+      "name": "acc-gen-0003-03-alias.hl7",
+      "kind": "ORU^R01",
+      "bytes": 247,
+      "sha256": "497e725e617dceb49404356377321358047eadbe419ee05e9e0a1eb51af92e94",
+      "encoding": "utf-8",
+      "shape": "region_alias",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-P53"
+    },
+    {
+      "name": "acc-gen-0003-04-duplicate.hl7",
+      "kind": "ORU^R01",
+      "bytes": 237,
+      "sha256": "f7ca8e894860b884ca363c36fbde0dfca2577309175f0abf66eca07b825e94ae",
+      "encoding": "utf-8",
+      "shape": "duplicate_delivery",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-CD3"
+    },
+    {
+      "name": "acc-gen-0003-05-noblock.hl7",
+      "kind": "ORU^R01",
+      "bytes": 243,
+      "sha256": "75587d135db37c7017c7e02ccb275c9dcc6f70e867126148c038cb099408433f",
+      "encoding": "utf-8",
+      "shape": "missing_block_no",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-CD3"
+    },
+    {
+      "name": "acc-gen-0003-06-pr.hl7",
+      "kind": "ORU^R01",
+      "bytes": 236,
+      "sha256": "93785160adb34d3b78dd848c97876dead84fa65543aaae67e2003e62ca380f7d",
+      "encoding": "utf-8",
+      "shape": "normal",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-PR"
+    },
+    {
+      "name": "acc-gen-0003-07-inverted.hl7",
+      "kind": "ORU^R01",
+      "bytes": 248,
+      "sha256": "b5a433935d2326b346f274b166d7039646b62f3ad06cd4796c0d230b20b4693c",
+      "encoding": "utf-8",
+      "shape": "inverted_time",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-PR"
+    },
+    {
+      "name": "acc-gen-0003-08-er.hl7",
+      "kind": "ORU^R01",
+      "bytes": 231,
+      "sha256": "1fb643a05dad8a0dea4cfc6d1498b80d2562da2737758657248771ecdd8e1bdf",
+      "encoding": "gbk",
+      "shape": "gbk_encoding",
+      "accession_no": "ACC-GEN-0003",
+      "item_code": "IHC-ER"
+    },
+    {
+      "name": "acc-gen-order-01.hl7",
+      "kind": "ORM^O01",
+      "bytes": 210,
+      "sha256": "cb1d125d86227f495a79f683fc5bff230a098abee1ac30173a3116c5d0f1b544",
+      "encoding": "utf-8",
+      "shape": "order_side",
+      "accession_no": "ACC-GEN-0001",
+      "item_code": "IHC-HER2"
+    },
+    {
+      "name": "acc-gen-order-02.hl7",
+      "kind": "ORM^O01",
+      "bytes": 313,
+      "sha256": "2b8d287e71d98190cae599e642fa05004a2eb55b47a9a01421f98d1bc7a014e8",
+      "encoding": "utf-8",
+      "shape": "order_side",
+      "accession_no": "ACC-GEN-0002",
+      "item_code": "IHC-P16"
+    },
+    {
+      "name": "baseline.json",
+      "kind": "baseline",
+      "bytes": 3114,
+      "sha256": "2e81c517ab2bbcbd0793f387ee48f20d705a60808d7f245b471050646801b0a1",
+      "encoding": "utf-8",
+      "shape": "baseline"
+    }
+  ],
+  "dataset_sha256": "07b044f1a10d8ca142a9e3781c14206eb9d5736283ea70ab1abeb0e1e3d61bc6"
+}

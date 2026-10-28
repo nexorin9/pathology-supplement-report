@@ -1,0 +1,212 @@
+{
+  "total": 21,
+  "aligned": 11,
+  "pending": 10,
+  "alignment_rate": 0.5238,
+  "pending_rate": 0.4762,
+  "misbound": 0,
+  "misbinding_rate": 0.0,
+  "false_merge": 0,
+  "false_merge_rate": 0.0,
+  "missed_match": 0,
+  "dangling": 0,
+  "ambiguous_cases": 2,
+  "ambiguous_pending": 2,
+  "ambiguous_pending_rate": 1.0,
+  "reason_mismatch": 0,
+  "duplicate_decisions": 0,
+  "missing_decisions": 0,
+  "extra_decisions": 0,
+  "ok": true,
+  "verdicts": [
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101131000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号写成 b-02（带连字符与前导零），归一化后仍是 B2"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101132000"
+      },
+      "verdict": "一致",
+      "detail": "没带蜡块号，部位写「宫体」，按同义词典折算到「子宫体」后精确命中"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD3",
+        "observed_at": "20260101133000"
+      },
+      "verdict": "一致",
+      "detail": "没带蜡块号，部位写「子宫体内侧」，靠词法相似唯一领先才落到 B1"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-KI67",
+        "observed_at": "20260101134000"
+      },
+      "verdict": "一致",
+      "detail": "没带蜡块号，部位写「宫腔内容物」，折算到「宫腔」后精确命中"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-P53",
+        "observed_at": "20260101135000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块 B2 上没申请过 IHC-P53"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CK7",
+        "observed_at": "20260101136000"
+      },
+      "verdict": "一致",
+      "detail": "报的是 B9，基线里没有这一块"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-P53",
+        "observed_at": "20260101137000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块写 B1，部位写「宫颈」—— 两个定位字段互相矛盾，不猜"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CK7",
+        "observed_at": "20260101138000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号与部位描述都没带，没有任何定位依据"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-P53",
+        "observed_at": "20260101139000"
+      },
+      "verdict": "一致",
+      "detail": "部位写「胃窦」，报告里没有这个部位"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101140000"
+      },
+      "verdict": "一致",
+      "detail": "OBX-11 = X，已回报但拿不到结果，不能写进报告"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CK7",
+        "observed_at": "20260101141000"
+      },
+      "verdict": "一致",
+      "detail": "结果值是空的，空行会被读成漏填"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD3",
+        "observed_at": "20260101142000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号精确命中 B3"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CK7",
+        "observed_at": "20260101143000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号精确命中 B2"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101144000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号精确命中 B1"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-KI67",
+        "observed_at": "20260101145000"
+      },
+      "verdict": "一致",
+      "detail": "蜡块号精确命中 B3"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0001",
+        "item_code": "IHC-CD3",
+        "observed_at": "20260101146000"
+      },
+      "verdict": "一致",
+      "detail": "这一条是更正（OBX-11 = C），取代同块同项的旧值；旧值不再单独成条"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0002",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101150000"
+      },
+      "verdict": "一致",
+      "detail": "报告里有两块都写「淋巴结」，没带蜡块号分不出来 —— 全部候选挂起，不取第一"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0003",
+        "item_code": "IHC-CD3",
+        "observed_at": "20260101160000"
+      },
+      "verdict": "一致",
+      "detail": "部位只写「管壁」，输卵管壁与胆囊管壁词法同分 —— 不猜"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0004",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101170000"
+      },
+      "verdict": "一致",
+      "detail": "申请侧已发出取消（ORC-1 = CA），这条结果不能进报告"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0004",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101180000"
+      },
+      "verdict": "一致",
+      "detail": "同一报告里 B2 上的同名项目没被取消，正常并入草稿"
+    },
+    {
+      "key": {
+        "accession_no": "ACC-BENCH-0004",
+        "item_code": "IHC-CD20",
+        "observed_at": "20260101190000"
+      },
+      "verdict": "一致",
+      "detail": "没带蜡块号，部位写「宫颈组织」（别名折算到「宫颈」），靠别名精确命中 B2"
+    }
+  ]
+}

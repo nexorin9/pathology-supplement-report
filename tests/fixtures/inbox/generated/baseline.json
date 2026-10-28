@@ -1,0 +1,139 @@
+{
+  "reports": [
+    {
+      "accession_no": "ACC-GEN-0001",
+      "base_version": "base-gen-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "结肠",
+          "block_no": "B1",
+          "order_no": "ORD-GEN-0001-1",
+          "ordered_items": [
+            "IHC-KI67",
+            "IHC-PR",
+            "IHC-CD3",
+            "IHC-ER",
+            "IHC-P53"
+          ]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "肝",
+          "block_no": "B2",
+          "order_no": "ORD-GEN-0001-2",
+          "ordered_items": [
+            "IHC-P53",
+            "IHC-CD3",
+            "IHC-COX2",
+            "IHC-PR",
+            "IHC-CD20"
+          ]
+        },
+        {
+          "region_seq": 3,
+          "region_desc": "甲状腺",
+          "block_no": "B3",
+          "order_no": "ORD-GEN-0001-3",
+          "ordered_items": [
+            "IHC-CK7",
+            "IHC-ER",
+            "IHC-P53",
+            "IHC-CD3",
+            "IHC-CD20"
+          ]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-GEN-0002",
+      "base_version": "base-gen-v2",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "甲状腺",
+          "block_no": "B1",
+          "order_no": "ORD-GEN-0002-1",
+          "ordered_items": [
+            "IHC-COX2",
+            "IHC-ER",
+            "IHC-KI67",
+            "IHC-CD3",
+            "IHC-CD20"
+          ]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "淋巴结",
+          "block_no": "B2",
+          "order_no": "ORD-GEN-0002-2",
+          "ordered_items": [
+            "IHC-P53",
+            "IHC-KI67",
+            "IHC-COX2",
+            "IHC-CD20",
+            "IHC-ER"
+          ]
+        },
+        {
+          "region_seq": 3,
+          "region_desc": "肝",
+          "block_no": "B3",
+          "order_no": "ORD-GEN-0002-3",
+          "ordered_items": [
+            "IHC-PR",
+            "IHC-CD3",
+            "IHC-P53",
+            "IHC-CK7",
+            "IHC-COX2"
+          ]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-GEN-0003",
+      "base_version": "base-gen-v3",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "肺",
+          "block_no": "B1",
+          "order_no": "ORD-GEN-0003-1",
+          "ordered_items": [
+            "IHC-CD3",
+            "IHC-PR",
+            "IHC-CK7",
+            "IHC-ER",
+            "IHC-COX2"
+          ]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "骨",
+          "block_no": "B2",
+          "order_no": "ORD-GEN-0003-2",
+          "ordered_items": [
+            "IHC-P53",
+            "IHC-CD3",
+            "IHC-ER",
+            "IHC-KI67",
+            "IHC-PR"
+          ]
+        },
+        {
+          "region_seq": 3,
+          "region_desc": "结肠",
+          "block_no": "B3",
+          "order_no": "ORD-GEN-0003-3",
+          "ordered_items": [
+            "IHC-CK7",
+            "IHC-PR",
+            "IHC-CD3",
+            "IHC-P53",
+            "IHC-CD20"
+          ]
+        }
+      ]
+    }
+  ]
+}

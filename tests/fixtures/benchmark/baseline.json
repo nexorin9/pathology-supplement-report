@@ -1,0 +1,161 @@
+{
+  "reports": [
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "base_version": "base-bench-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "B1",
+          "order_no": "ORD-BENCH-0001",
+          "ordered_items": ["IHC-CD3", "IHC-CD20", "IHC-P53"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "B2",
+          "order_no": "ORD-BENCH-0002",
+          "ordered_items": ["IHC-CD20", "IHC-CK7"]
+        },
+        {
+          "region_seq": 3,
+          "region_desc": "宫腔",
+          "block_no": "B3",
+          "order_no": "ORD-BENCH-0003",
+          "ordered_items": ["IHC-CD3", "IHC-KI67"]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-BENCH-0002",
+      "base_version": "base-bench-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "淋巴结",
+          "block_no": "B1",
+          "order_no": "ORD-BENCH-0004",
+          "ordered_items": ["IHC-CD20"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "淋巴结",
+          "block_no": "B2",
+          "order_no": "ORD-BENCH-0005",
+          "ordered_items": ["IHC-CD20"]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-BENCH-0003",
+      "base_version": "base-bench-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "B1",
+          "order_no": "ORD-BENCH-0006",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "B2",
+          "order_no": "ORD-BENCH-0009",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 3,
+          "region_desc": "乳腺",
+          "block_no": "B3",
+          "order_no": "ORD-BENCH-0010",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 4,
+          "region_desc": "肝",
+          "block_no": "B4",
+          "order_no": "ORD-BENCH-0011",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 5,
+          "region_desc": "胃",
+          "block_no": "B5",
+          "order_no": "ORD-BENCH-0012",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 6,
+          "region_desc": "淋巴结",
+          "block_no": "B6",
+          "order_no": "ORD-BENCH-0013",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 7,
+          "region_desc": "肺",
+          "block_no": "B7",
+          "order_no": "ORD-BENCH-0014",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 8,
+          "region_desc": "肾",
+          "block_no": "B8",
+          "order_no": "ORD-BENCH-0015",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 9,
+          "region_desc": "骨",
+          "block_no": "B9",
+          "order_no": "ORD-BENCH-0016",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 10,
+          "region_desc": "皮肤",
+          "block_no": "B10",
+          "order_no": "ORD-BENCH-0017",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 11,
+          "region_desc": "输卵管壁",
+          "block_no": "B11",
+          "order_no": "ORD-BENCH-0018",
+          "ordered_items": ["IHC-CD3"]
+        },
+        {
+          "region_seq": 12,
+          "region_desc": "胆囊管壁",
+          "block_no": "B12",
+          "order_no": "ORD-BENCH-0019",
+          "ordered_items": ["IHC-CD3"]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-BENCH-0004",
+      "base_version": "base-bench-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "B1",
+          "order_no": "ORD-BENCH-0007",
+          "ordered_items": ["IHC-CD20"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "B2",
+          "order_no": "ORD-BENCH-0008",
+          "ordered_items": ["IHC-CD20"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": "test-partial",
+  "entries": [
+    { "canonical": 123 },
+    { "canonical": "肺", "aliases": ["肺部", "肺组织"] },
+    { "canonical": "乳腺", "aliases": "不是数组" }
+  ]
+}

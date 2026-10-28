@@ -1,0 +1,90 @@
+{
+  "dataset": "/tests/fixtures/benchmark",
+  "version": "bench-2026.10",
+  "sample_count": 21,
+  "caliber": "三方共用同一份输入：去重与更正取代后的生效结果条目 + 同一份基线快照；无法获得 / 值为空 / 回报时间倒挂的前置判定三方一致（与归属无关）；差异只在「结果归到哪一块」这一步。对齐率 = 归到正确块的条数 ÷ 样本条数；并入率 = 并入草稿的条数 ÷ 样本条数（含归错的）；错绑定 = 并入但归到了另一块；误并入 = 标准答案要求挂起却被并入；挂起率 = 进了待人工处理清单的条数 ÷ 样本条数。「原因不符」不计入对照口径 —— 挂起原因的中文标签是产品词汇，朴素做法没有这套标签。",
+  "parties": [
+    {
+      "key": "product",
+      "label": "本产品｜四级级联 + 唯一领先 + 状态闸门",
+      "kind": "本产品",
+      "note": "跑产品真路径，与线上同一段代码",
+      "sample_count": 21,
+      "merged_count": 11,
+      "merged_rate": 0.5238,
+      "correct_aligned_count": 11,
+      "alignment_rate": 0.5238,
+      "misbound_count": 0,
+      "false_merge_count": 0,
+      "pending_count": 10,
+      "pending_rate": 0.4762,
+      "missed_match_count": 0,
+      "ambiguous_pending_rate": 1.0,
+      "dangling_count": 0
+    },
+    {
+      "key": "baseline_a",
+      "label": "基线 A｜仅规范化精确匹配",
+      "kind": "朴素基线",
+      "note": "归一化后相等即命中；多个命中取第一；不查已申请项目与取消状态",
+      "sample_count": 21,
+      "merged_count": 11,
+      "merged_rate": 0.5238,
+      "correct_aligned_count": 7,
+      "alignment_rate": 0.3333,
+      "misbound_count": 0,
+      "false_merge_count": 4,
+      "pending_count": 10,
+      "pending_rate": 0.4762,
+      "missed_match_count": 4,
+      "ambiguous_pending_rate": 0.5,
+      "dangling_count": 0
+    },
+    {
+      "key": "baseline_b",
+      "label": "基线 B｜仅取词法最高分",
+      "kind": "朴素基线",
+      "note": "取词法最高分那块；同分直接取第一；不查已申请项目与取消状态",
+      "sample_count": 21,
+      "merged_count": 17,
+      "merged_rate": 0.8095,
+      "correct_aligned_count": 11,
+      "alignment_rate": 0.5238,
+      "misbound_count": 0,
+      "false_merge_count": 6,
+      "pending_count": 4,
+      "pending_rate": 0.1905,
+      "missed_match_count": 0,
+      "ambiguous_pending_rate": 0.0,
+      "dangling_count": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "本产品错绑定数 = 0",
+      "passed": true,
+      "detail": "错绑定 0 条（基线 A 0 条、基线 B 0 条）"
+    },
+    {
+      "name": "本产品误并入数 = 0",
+      "passed": true,
+      "detail": "误并入 0 条（基线 A 4 条、基线 B 6 条）"
+    },
+    {
+      "name": "本产品对齐率不低于基线 A",
+      "passed": true,
+      "detail": "本产品 52.4%（11/21） vs 基线 A 33.3%（7/21）"
+    },
+    {
+      "name": "本产品对齐率不低于基线 B",
+      "passed": true,
+      "detail": "本产品 52.4%（11/21） vs 基线 B 52.4%（11/21）"
+    },
+    {
+      "name": "本产品无第三去向 = 0",
+      "passed": true,
+      "detail": "无第三去向 0 条（结果既没进草稿也没进清单）"
+    }
+  ],
+  "ok": true
+}

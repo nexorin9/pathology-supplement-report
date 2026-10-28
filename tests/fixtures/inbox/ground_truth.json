@@ -1,0 +1,60 @@
+{
+  "version": "inbox-2026.10",
+  "note": "结果目录样例集的标准答案（手写）。每条结果应该归到哪一块，或应该挂起并给什么原因；expect=matched 时 block 必填，expect=pending 时 reason 必填。观察时间是结果条目（OBX-14）的回报时间，与项目码一起唯一标识一条结果；更正（OBX-11=C）取代旧值后以更正条目的回报时间为准。",
+  "cases": [
+    {
+      "accession_no": "ACC-EXAMPLE-0001",
+      "item_code": "IHC-CD3",
+      "observed_at": "20260101140000",
+      "expect": "matched",
+      "block": { "region_seq": 1, "block_no": "B1" },
+      "reason": null,
+      "note": "更正（OBX-11=C）取代同块同项的旧值，弱阳性取代阴性，归到蜡块 B1"
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101131000",
+      "expect": "matched",
+      "block": { "region_seq": 1, "block_no": "B1" },
+      "reason": null,
+      "note": "蜡块号 B1 精确命中；部位写「宫体」，按同义词典折算到「子宫体」"
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0001",
+      "item_code": "IHC-KI67",
+      "observed_at": "20260101132000",
+      "expect": "pending",
+      "block": null,
+      "reason": "缺蜡块号",
+      "note": "回报没带蜡块号，且这个项目在任何块上都没申请过 —— 不该并进报告，等人补齐蜡块号"
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101150000",
+      "expect": "matched",
+      "block": { "region_seq": 2, "block_no": "B2" },
+      "reason": null,
+      "note": "蜡块号 B2 精确命中（同一份报告里的另一块，同名项目）"
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0002",
+      "item_code": "IHC-ER",
+      "observed_at": "20260102100000",
+      "expect": "matched",
+      "block": { "region_seq": 1, "block_no": "B5" },
+      "reason": null,
+      "note": "蜡块号 B5 精确命中"
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0002",
+      "item_code": "IHC-PR",
+      "observed_at": "20260102101000",
+      "expect": "matched",
+      "block": { "region_seq": 1, "block_no": "B5" },
+      "reason": null,
+      "note": "蜡块号 B5 精确命中（同一块上的另一项）"
+    }
+  ]
+}

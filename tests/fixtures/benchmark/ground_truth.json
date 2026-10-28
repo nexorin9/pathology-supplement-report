@@ -1,0 +1,174 @@
+{
+  "version": "bench-2026.10",
+  "note": "病理补充报告对齐基准集的标准答案（手写）。每条结果应该归到哪一块，或应该挂起并给什么原因；expect=matched 时 block 必填，expect=pending 时 reason 必填。观察时间是结果条目（OBX-14）的回报时间，与项目码一起唯一标识一条结果。",
+  "cases": [
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101131000",
+      "expect": "matched",
+      "block": {"region_seq": 2, "block_no": "B2"},
+      "note": "蜡块号写成 b-02（带连字符与前导零），归一化后仍是 B2"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101132000",
+      "expect": "matched",
+      "block": {"region_seq": 1, "block_no": "B1"},
+      "note": "没带蜡块号，部位写「宫体」，按同义词典折算到「子宫体」后精确命中"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD3",
+      "observed_at": "20260101133000",
+      "expect": "matched",
+      "block": {"region_seq": 1, "block_no": "B1"},
+      "note": "没带蜡块号，部位写「子宫体内侧」，靠词法相似唯一领先才落到 B1"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-KI67",
+      "observed_at": "20260101134000",
+      "expect": "matched",
+      "block": {"region_seq": 3, "block_no": "B3"},
+      "note": "没带蜡块号，部位写「宫腔内容物」，折算到「宫腔」后精确命中"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-P53",
+      "observed_at": "20260101135000",
+      "expect": "pending",
+      "reason": "待查项未登记",
+      "note": "蜡块 B2 上没申请过 IHC-P53"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CK7",
+      "observed_at": "20260101136000",
+      "expect": "pending",
+      "reason": "未命中部位",
+      "note": "报的是 B9，基线里没有这一块"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-P53",
+      "observed_at": "20260101137000",
+      "expect": "pending",
+      "reason": "部位与蜡块号冲突",
+      "note": "蜡块写 B1，部位写「宫颈」—— 两个定位字段互相矛盾，不猜"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CK7",
+      "observed_at": "20260101138000",
+      "expect": "pending",
+      "reason": "字段缺失",
+      "note": "蜡块号与部位描述都没带，没有任何定位依据"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-P53",
+      "observed_at": "20260101139000",
+      "expect": "pending",
+      "reason": "缺蜡块号",
+      "note": "部位写「胃窦」，报告里没有这个部位"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101140000",
+      "expect": "pending",
+      "reason": "结果无法获得",
+      "note": "OBX-11 = X，已回报但拿不到结果，不能写进报告"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CK7",
+      "observed_at": "20260101141000",
+      "expect": "pending",
+      "reason": "结果值为空",
+      "note": "结果值是空的，空行会被读成漏填"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD3",
+      "observed_at": "20260101142000",
+      "expect": "matched",
+      "block": {"region_seq": 3, "block_no": "B3"},
+      "note": "蜡块号精确命中 B3"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CK7",
+      "observed_at": "20260101143000",
+      "expect": "matched",
+      "block": {"region_seq": 2, "block_no": "B2"},
+      "note": "蜡块号精确命中 B2"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101144000",
+      "expect": "matched",
+      "block": {"region_seq": 1, "block_no": "B1"},
+      "note": "蜡块号精确命中 B1"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-KI67",
+      "observed_at": "20260101145000",
+      "expect": "matched",
+      "block": {"region_seq": 3, "block_no": "B3"},
+      "note": "蜡块号精确命中 B3"
+    },
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "item_code": "IHC-CD3",
+      "observed_at": "20260101146000",
+      "expect": "matched",
+      "block": {"region_seq": 1, "block_no": "B1"},
+      "note": "这一条是更正（OBX-11 = C），取代同块同项的旧值；旧值不再单独成条"
+    },
+    {
+      "accession_no": "ACC-BENCH-0002",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101150000",
+      "expect": "pending",
+      "reason": "同分多候选",
+      "note": "报告里有两块都写「淋巴结」，没带蜡块号分不出来 —— 全部候选挂起，不取第一"
+    },
+    {
+      "accession_no": "ACC-BENCH-0003",
+      "item_code": "IHC-CD3",
+      "observed_at": "20260101160000",
+      "expect": "pending",
+      "reason": "同分多候选",
+      "note": "部位只写「管壁」，输卵管壁与胆囊管壁词法同分 —— 不猜"
+    },
+    {
+      "accession_no": "ACC-BENCH-0004",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101170000",
+      "expect": "pending",
+      "reason": "待查项已取消",
+      "note": "申请侧已发出取消（ORC-1 = CA），这条结果不能进报告"
+    },
+    {
+      "accession_no": "ACC-BENCH-0004",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101180000",
+      "expect": "matched",
+      "block": {"region_seq": 2, "block_no": "B2"},
+      "note": "同一报告里 B2 上的同名项目没被取消，正常并入草稿"
+    },
+    {
+      "accession_no": "ACC-BENCH-0004",
+      "item_code": "IHC-CD20",
+      "observed_at": "20260101190000",
+      "expect": "matched",
+      "block": {"region_seq": 2, "block_no": "B2"},
+      "note": "没带蜡块号，部位写「宫颈组织」（别名折算到「宫颈」），靠别名精确命中 B2"
+    }
+  ]
+}

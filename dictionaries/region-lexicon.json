@@ -1,0 +1,29 @@
+{
+  "version": "2026.10",
+  "entries": [
+    { "canonical": "子宫体", "aliases": ["宫体", "内膜", "子宫体部"] },
+    { "canonical": "宫颈", "aliases": ["子宫颈", "宫颈部", "宫颈组织"] },
+    { "canonical": "卵巢", "aliases": ["卵巢组织", "卵巢实质", "卵泡"] },
+    { "canonical": "输卵管", "aliases": ["输卵管管", "输卵管组织"] },
+    { "canonical": "乳腺", "aliases": ["乳腺组织", "乳腺腺体", "乳腺实质"] },
+    { "canonical": "甲状腺", "aliases": ["甲状腺组织", "甲状组织"] },
+    { "canonical": "淋巴结", "aliases": ["淋巴结组织", "淋巴结构", "淋巴结窦"] },
+    { "canonical": "胃", "aliases": ["胃壁", "胃黏膜", "胃组织"] },
+    { "canonical": "食管", "aliases": ["食管壁", "食管黏膜"] },
+    { "canonical": "小肠", "aliases": ["小肠壁", "小肠黏膜"] },
+    { "canonical": "结肠", "aliases": ["结肠壁", "结肠黏膜", "结肠组织"] },
+    { "canonical": "直肠", "aliases": ["直肠壁", "直肠黏膜"] },
+    { "canonical": "阑尾", "aliases": ["阑尾壁", "尾蚓突"] },
+    { "canonical": "肝", "aliases": ["肝脏", "肝组织", "肝实质"] },
+    { "canonical": "胆囊", "aliases": ["胆囊壁", "胆囊组织"] },
+    { "canonical": "胰腺", "aliases": ["胰腺组织", "胰腺实质"] },
+    { "canonical": "肺", "aliases": ["肺组织", "肺叶", "肺实质"] },
+    { "canonical": "胸膜", "aliases": ["胸膜壁", "壁层胸膜"], "departments": ["胸外科"] },
+    { "canonical": "肾", "aliases": ["肾脏", "肾组织", "肾实质"] },
+    { "canonical": "膀胱", "aliases": ["膀胱壁", "膀胱黏膜"] },
+    { "canonical": "前列腺", "aliases": ["前列腺组织", "前列腺实质"] },
+    { "canonical": "皮肤", "aliases": ["皮肤组织", "表皮", "真皮"] },
+    { "canonical": "骨", "aliases": ["骨组织", "骨质", "骨组织块"] },
+    { "canonical": "宫腔", "aliases": ["宫腔内容物", "宫腔组织"], "departments": ["妇科"] }
+  ]
+}

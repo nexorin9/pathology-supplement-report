@@ -1,0 +1,24 @@
+{
+  "reports": [
+    {
+      "accession_no": "ACC-EDGE-0001",
+      "base_version": "base-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "E1",
+          "order_no": "ORD-EDGE-0001",
+          "ordered_items": ["IHC-CD3", "IHC-KI67", "IHC-ER", "IHC-PR"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "E2",
+          "order_no": "ORD-EDGE-0002",
+          "ordered_items": ["IHC-CD20"]
+        }
+      ]
+    }
+  ]
+}

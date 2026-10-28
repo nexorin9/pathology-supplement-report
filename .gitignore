@@ -1,0 +1,54 @@
+# 运行期数据与状态库
+data/
+logs/
+out/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+
+# 环境变量与凭据（真实值不入库）
+.env
+.env.*
+!.env.example
+
+# Python 缓存与构建产物
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# 前端与其它语言的常见产物（本项目不引入，仅防误提交）
+node_modules/
+target/
+.next/
+.nuxt/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+
+# round 元数据（不属于发布内容）
+score.json
+progress.txt
+task.json
+
+# 规模集（脚本化合成，固定种子可重跑；不入库，按需现场生成）
+# 生成命令：python tests/fixtures/generate_samples.py --scale 2000 --flat --out tests/fixtures/scale
+tests/fixtures/scale/

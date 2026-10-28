@@ -1,0 +1,8 @@
+{
+  "version": "test-2026.10",
+  "entries": [
+    { "canonical": "子宫体", "aliases": ["宫体", "内膜"], "departments": ["妇科"] },
+    { "canonical": "乳腺", "aliases": ["乳腺组织", "乳腺腺体"] },
+    { "canonical": "宫颈", "aliases": ["子宫颈"] }
+  ]
+}

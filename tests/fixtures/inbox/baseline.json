@@ -1,0 +1,37 @@
+{
+  "reports": [
+    {
+      "accession_no": "ACC-EXAMPLE-0001",
+      "base_version": "base-v3",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "B1",
+          "order_no": "ORD-EXAMPLE-0001",
+          "ordered_items": ["IHC-CD3", "IHC-CD20"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "B2",
+          "order_no": "ORD-EXAMPLE-0002",
+          "ordered_items": ["IHC-CD20", "IHC-CK7"]
+        }
+      ]
+    },
+    {
+      "accession_no": "ACC-EXAMPLE-0002",
+      "base_version": "base-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "乳腺",
+          "block_no": "B5",
+          "order_no": "ORD-EXAMPLE-0003",
+          "ordered_items": ["IHC-ER", "IHC-PR"]
+        }
+      ]
+    }
+  ]
+}

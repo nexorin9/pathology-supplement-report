@@ -1,0 +1,99 @@
+{
+  "inbox": "/tests/fixtures/scale",
+  "sample": {
+    "files_scanned": 2200,
+    "result_files": 2000,
+    "order_files": 200,
+    "parsed_results": 2000,
+    "parsed_orders": 201,
+    "reports": 300,
+    "accepted": 1700,
+    "duplicates": 300,
+    "superseded": 300,
+    "corrections_applied": 300,
+    "inverted_corrections": 196,
+    "withheld": 1,
+    "malformed": 0,
+    "derived_queries": 4700,
+    "recall_keys": 14097,
+    "drafts": 300,
+    "draft_entries": 1203,
+    "placeholder_count": 3495,
+    "pending_count": 197,
+    "effective_results": 1400,
+    "match_levels": {
+      "L1_block_exact": 603,
+      "L2_region_normalized": 600,
+      "L3_region_fuzzy": 0,
+      "L4_pending": 0
+    },
+    "dataset_seed": 42,
+    "dataset_sha256": "0b90f25d94ade4699b18cd2d1a657755fc3eec9d4674527ff0e7270e11ca979c"
+  },
+  "metrics": {
+    "elapsed_seconds": 1.463,
+    "alignment_rate": 0.8593,
+    "pending_rate": 0.1407,
+    "peak_memory_mb": 14.81,
+    "process_peak_rss_mb": 44.16,
+    "state_db_bytes": 2940928,
+    "state_db_mb": 2.805
+  },
+  "environment": {
+    "measured_at": "2026-10-28T21:12:31+08:00",
+    "python_version": "3.10.20",
+    "python_implementation": "CPython",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 10,
+    "dataset_generator": "tests/fixtures/generate_samples.py",
+    "dataset_seed": 42,
+    "dataset_sha256": "0b90f25d94ade4699b18cd2d1a657755fc3eec9d4674527ff0e7270e11ca979c"
+  },
+  "thresholds": {
+    "max_elapsed_seconds": 60.0,
+    "min_alignment_rate": 0.6,
+    "max_pending_rate": 0.4,
+    "max_peak_memory_mb": 256.0,
+    "max_state_db_mb": 64.0
+  },
+  "checks": [
+    {
+      "name": "端到端耗时",
+      "passed": true,
+      "actual": 1.462836124934256,
+      "limit": 60.0,
+      "detail": "1.46 秒（上限 60 秒）"
+    },
+    {
+      "name": "单轮对齐率",
+      "passed": true,
+      "actual": 0.8592857142857143,
+      "limit": 0.6,
+      "detail": "85.9%（下限 60%）"
+    },
+    {
+      "name": "挂起率",
+      "passed": true,
+      "actual": 0.1407142857142857,
+      "limit": 0.4,
+      "detail": "14.1%（上限 40%；与对齐率互补，分母同为生效结果数）"
+    },
+    {
+      "name": "峰值内存增量",
+      "passed": true,
+      "actual": 14.8125,
+      "limit": 256.0,
+      "detail": "14.8 MB（上限 256 MB；进程峰值 RSS 44.2 MB）"
+    },
+    {
+      "name": "状态库体积",
+      "passed": true,
+      "actual": 2.8046875,
+      "limit": 64.0,
+      "detail": "2.80 MB（上限 64 MB）"
+    }
+  ],
+  "ok": true
+}

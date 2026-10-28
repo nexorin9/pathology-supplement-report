@@ -1,0 +1,24 @@
+{
+  "reports": [
+    {
+      "accession_no": "ACC-EXAMPLE-0003",
+      "base_version": "base-v1",
+      "blocks": [
+        {
+          "region_seq": 1,
+          "region_desc": "子宫体",
+          "block_no": "B1",
+          "order_no": "ORD-EXAMPLE-0011",
+          "ordered_items": ["IHC-CD20"]
+        },
+        {
+          "region_seq": 2,
+          "region_desc": "宫颈",
+          "block_no": "B2",
+          "order_no": "ORD-EXAMPLE-0012",
+          "ordered_items": ["IHC-CD20"]
+        }
+      ]
+    }
+  ]
+}

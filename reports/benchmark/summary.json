@@ -1,0 +1,83 @@
+{
+  "inbox": "/tests/fixtures/benchmark",
+  "output_dir": "/reports/benchmark",
+  "baseline_source": "/tests/fixtures/benchmark/baseline.json",
+  "files_scanned": 8,
+  "result_files": 7,
+  "order_files": 1,
+  "parsed_results": 23,
+  "parsed_orders": 1,
+  "order_malformed": 0,
+  "malformed": 0,
+  "accepted": 22,
+  "duplicates": 1,
+  "superseded": 1,
+  "corrections_applied": 1,
+  "inverted_corrections": 0,
+  "withheld": 2,
+  "not_obtained": 1,
+  "empty_value": 1,
+  "rejected": [],
+  "order_rejected": [],
+  "deferred": [
+    "bench-0004-cancel.orm.hl7"
+  ],
+  "derived_queries": 23,
+  "awaiting_queries": 22,
+  "cancelled_queries": 1,
+  "held_queries": 0,
+  "terminated_queries": 0,
+  "recall_key_count": 66,
+  "lexicon": {
+    "version": "builtin-2026.10",
+    "source": "内置最小词表",
+    "entry_count": 24,
+    "alias_count": 60,
+    "warnings": []
+  },
+  "decode_counts": {
+    "utf-8": 8
+  },
+  "fanout": {
+    "routes_total": 66,
+    "routes_ok": 66,
+    "routes_failed": 0,
+    "routes_timed_out": 0,
+    "items": 82,
+    "pending_items": 65,
+    "merged": 82,
+    "kept": 19,
+    "duplicates": 63,
+    "unkeyed": 0,
+    "max_workers": 4,
+    "route_timeout": 5.0,
+    "policy": "MERGE",
+    "failures": [],
+    "note": "旁路观察：多路召回跑一遍统计路况，草稿内容仍由精确对齐层决定"
+  },
+  "match_levels": {
+    "L1_block_exact": 7,
+    "L2_region_normalized": 2,
+    "L3_region_fuzzy": 2,
+    "L4_pending": 8
+  },
+  "rationale_count": 11,
+  "pending_rationale_count": 8,
+  "placeholder_count": 0,
+  "draft_entry_count": 11,
+  "pending_count": 10,
+  "effective_result_count": 21,
+  "drafts": [
+    {
+      "accession_no": "ACC-BENCH-0001",
+      "entry_count": 9,
+      "path": "/reports/benchmark/drafts/ACC-BENCH-0001.txt"
+    },
+    {
+      "accession_no": "ACC-BENCH-0004",
+      "entry_count": 2,
+      "path": "/reports/benchmark/drafts/ACC-BENCH-0004.txt"
+    }
+  ],
+  "pending_path": "/reports/benchmark/pending_list.txt"
+}
